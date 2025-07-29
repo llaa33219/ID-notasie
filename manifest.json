@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리-ID notasie",
+  "version": "1.0",
+  "description": "댓글에 id를 각인시켜줍니다.",
+
+  "host_permissions": [
+    "https://playentry.org/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://playentry.org/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
